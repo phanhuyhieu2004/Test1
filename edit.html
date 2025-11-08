@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sửa Sản phẩm</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Sửa Sản phẩm</h1>
+        <form id="editForm">
+            <label>Tên sản phẩm:</label>
+            <input type="text" id="name" required>
+
+            <label>Giá:</label>
+            <input type="number" id="price" min="0" required>
+
+            <label>Mô tả:</label>
+            <textarea id="desc" rows="4"></textarea>
+
+            <div class="form-actions">
+                <button type="submit" class="btn btn-save">Lưu</button>
+                <a href="index.html" class="btn btn-back">Quay lại</a>
+            </div>
+        </form>
+    </div>
+    <script src="script.js"></script>
+    <script>handleEdit();</script>
+</body>
+</html>
